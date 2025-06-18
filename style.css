@@ -150,10 +150,6 @@ body {
 
  @media (max-width: 480px) {
 
-   .main-container {
-      height: 120vh;
-   }
-
    .todo-app {
       width: 350px;
    } 
