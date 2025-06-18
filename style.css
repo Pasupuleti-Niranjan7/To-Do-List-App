@@ -32,7 +32,7 @@ body {
  .adding-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-radius: 8rem;
     padding-left: 1rem;
     margin-bottom: 2rem;
@@ -157,10 +157,6 @@ body {
    .adding-container {
       margin-left: -25px;
    }
-  
-   .ist-container {
-      margin-left: -25px;
-   }
 
  }
 
@@ -182,11 +178,6 @@ body {
    button {
       padding: 1rem 1.5rem;
    }
-  
-   .ist-container {
-      margin-left: -25px;
-   }
-   
  }
 
 
@@ -208,8 +199,5 @@ body {
       padding: 0.7rem 1rem;
    }
   
-   .ist-container {
-      margin-left: -25px;
-   }
    
  }
