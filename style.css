@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+    font-family: 'RadioCanada',sans-serif;
+}
+
+body {
+   overflow: hidden;
+}
+
+.main-container {
+   height: 100vh;
+   background: linear-gradient(40deg, #153677, #ee82ee); 
+   padding: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 45px 30px 65px;
+    border-radius: 0.8rem;
+ }
+
+ .todo-app > h2 {
+    color: #112436;
+    margin-bottom: 1.3rem;
+ } 
+
+ .adding-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+ }
+
+ .adding-container > input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: #edeef0;
+    border-radius: 8rem;
+    padding: 1rem 1rem 1rem 1.5rem;
+    margin-right: 0.6rem;
+    font-weight: 10rem;
+    font-size: 1rem;
+ }
+
+ button {
+    border: none;
+    outline: none;
+    padding: 1rem 3rem;
+    background-color: #ee82ee;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 3rem;
+    cursor: pointer;
+ }
+
+ ul li {
+    list-style: none;
+    font-size: 1rem;
+    padding: 1rem 3.5rem;
+    cursor: pointer;
+    position: relative;
+ }
+
+ ul li::before {
+    content: ' ';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    top: 12px;
+    left: 10px;
+ }
+
+ ul li.checked {
+   color: #555;
+   text-decoration: line-through;
+ }
+
+ ul li.checked::before {
+   background-image: url(checked.png);
+ }
+
+ ul > li span {
+   position: absolute;
+   right: 0;
+   top: 5px;
+   width: 35px;
+   height: 35px;
+   font-weight: 700;
+   font-size: 1rem;
+   color: #555;
+   text-align: center;
+   line-height: 40px;
+ }
+
+ ul > li span:hover {
+   background-color: #edeef0;
+   text-align: center;
+ }
+
+
+  /* ---Scroll-bar--- */
+ .task-container {
+   height: 200px;
+   overflow-y: scroll;
+ }
+
+.task-container::-webkit-scrollbar {
+   width: 8px;
+} 
+
+.task-container::-webkit-scrollbar-track {
+   background-color: #fff;
+   border-radius: 1rem;
+}
+
+.task-container::-webkit-scrollbar-thumb {
+   background-color: #adabab;
+   border-radius: 1rem;
+   cursor: pointer;
+}
+
+.task-container::-webkit-scrollbar-thumb:hover {
+   background-color: #6b6a6a;
+} 
+
+
+/* --- Adding Media Queries --- */
+
+ @media (max-width: 610px) {
+   
+   .todo-app {
+      width: 400px;
+   }
+
+ }
+
+
+ @media (max-width: 480px) {
+
+   .main-container {
+      height: 120vh;
+   }
+
+   .todo-app {
+      width: 350px;
+   } 
+
+   .adding-container {
+      margin-left: -25px;
+   }
+  
+   .ist-container {
+      margin-left: -25px;
+   }
+
+ }
+
+
+ @media (max-width: 435px) {
+
+   .todo-app {
+      width: 300px;
+   } 
+
+   .adding-container {
+      margin-left: -25px;
+   }
+
+   .adding-container input {
+      padding: 1rem;
+   }
+
+   button {
+      padding: 1rem 1.5rem;
+   }
+  
+   .ist-container {
+      margin-left: -25px;
+   }
+   
+ }
+
+
+  @media (max-width: 360px) {
+
+   .todo-app {
+      width: 250px;
+   } 
+
+   .adding-container {
+      margin-left: -35px;
+   }
+
+   .adding-container input {
+      padding: 0.7rem;
+   }
+
+   button {
+      padding: 0.7rem 1rem;
+   }
+  
+   .ist-container {
+      margin-left: -25px;
+   }
+   
+ }
