@@ -13,9 +13,6 @@ body {
    height: 100vh;
    background: linear-gradient(40deg, #153677, #ee82ee); 
    padding: 10px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
 }
 
 .todo-app {
